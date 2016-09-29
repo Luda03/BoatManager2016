@@ -145,7 +145,7 @@ if (isset($_SESSION['valid'])) {
                     },
                     success: function () {
 
-                        location.reload();
+                        location.reload(true);
 
                     }
                 });
@@ -177,7 +177,7 @@ if (isset($_SESSION['valid'])) {
                 },
                 success: function () {
 
-                    location.reload();
+                    location.reload(true);
 
 
                 }

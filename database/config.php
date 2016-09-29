@@ -6,6 +6,6 @@
  * Time: 14:37
  */
 define("DBHOST", "localhost");
-define("DBNAME", "boatdatabase");
+define("DBNAME", "BDB");
 define("DBUSER", "root");
-define("DBPASSWD", "root");
+define("DBPASSWD", "");
