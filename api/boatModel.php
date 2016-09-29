@@ -17,7 +17,7 @@ class BoatModel
         try {
             
             $pdo = Database::getInstance();
-            $sth = $pdo->prepare("SELECT * FROM BOATS WHERE user_id_FK = :iduser ORDER BY ID_BOAT");
+            $sth = $pdo->prepare("SELECT * FROM boats WHERE user_id_FK = :iduser ORDER BY id_boat");
             $sth->bindParam(':iduser', $userid);
             $sth->execute();
             $datas = $sth->fetchAll(PDO::FETCH_ASSOC);

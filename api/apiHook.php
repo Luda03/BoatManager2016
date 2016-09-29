@@ -23,7 +23,7 @@ if (isset($_POST['insert_status'])) {
         $type = $_POST['type'];
         $iduser = $_SESSION['user_id'];
 
-        $stmt = $pdo->prepare("INSERT INTO BOATS (name,type,user_id_FK) VALUES (:name, :type, :userid)");
+        $stmt = $pdo->prepare("INSERT INTO boats (name,type,user_id_FK) VALUES (:name, :type, :userid)");
         $stmt->bindParam(':name', $name);
         $stmt->bindParam(':type', $type);
         $stmt->bindParam(':userid', $iduser);
@@ -44,7 +44,7 @@ if (isset ($_POST['delete_status'])) {
     try {
 
         $id = $_POST['id'];
-        $stmt = $pdo->prepare("DELETE FROM BOATS WHERE id_boat = :id");
+        $stmt = $pdo->prepare("DELETE FROM boats WHERE id_boat = :id");
         $stmt->bindParam(':id', $id);
         $stmt->execute();
     } catch (Exception $e) {
