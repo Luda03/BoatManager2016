@@ -20,7 +20,7 @@ Web app to manage boats. You can add and remove different kind of Boats.
 
 *******Additional Info*******
 
-Example user accounts:
+User accounts:
 
 User 1
 
