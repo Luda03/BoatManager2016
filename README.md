@@ -23,11 +23,15 @@ Web app to manage boats. You can add and remove different kind of Boats.
 Example user accounts:
 
 User 1
+
     Login = Davyjones666
+    
     Password = CaptainPiR4T3
 
 User 2
+    
     Login = Lechuck2016
+    
     Password = guybrushTreepW00d
 
 
