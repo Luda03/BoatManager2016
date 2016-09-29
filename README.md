@@ -12,11 +12,13 @@ Web app to manage boats. You can add and remove different kind of Boats.
 
 1) Create a new database on MySQL DBMS and import the boatdb.sql 
 
-2) Place the boatmanager folder on your Web Server 
+2) Drop the boatmanager folder on your Web Server 
 
 3) Edit your boatmanager/database/config.php
 
-4) Enjoy
+4) Launch the app with your favourite web browser
+
+5) Enjoy
 
 *******Additional Info*******
 
