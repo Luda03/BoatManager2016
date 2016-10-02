@@ -69,7 +69,9 @@ if (isset($_SESSION['valid'])) {
                         <option>Motorboat</option>
                     </select>
                 </div>
-                <input type="submit" value="Click me" class="btn btn-default" />
+
+                <input type="submit" value="Click me" class="btn btn-default"/>
+
             </form>
         </div>
 
@@ -155,34 +157,32 @@ if (isset($_SESSION['valid'])) {
 
         });
 
+        $(function () {
+            $('#insert_form_id').submit(function (e) {
+                e.preventDefault();
 
-        $("#insert_form_id").submit(function () {
+                var name = $("#name").val();
+                var type = $("#type").find(":selected").text();
 
-            var name = $("#name").val();
-            var type = $("#type").find(":selected").text();
-
-            if (name == '') {
-                alert('Enter a name');
-                return false
-            }
-
-            $.ajax({
-                url: '../api/apiHook.php',
-                type: 'POST',
-                data: {
-                    insert_status: 'yes',
-                    name: name,
-                    type: type
-                },
-                success: function () {
-
-                    location.reload(true);
-
-
+                if (name == '') {
+                    alert('Enter a name');
+                    return false
                 }
+
+                $.ajax({
+                    url: '../api/apiHook.php',
+                    type: 'POST',
+                    data: {
+                        insert_status: 'yes',
+                        name: name,
+                        type: type
+                    },
+                    success: function () {
+                        location.reload(true);
+                    }
+                });
             });
         });
-
     });
 
 </script>
