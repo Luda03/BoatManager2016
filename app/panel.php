@@ -70,7 +70,7 @@ if (isset($_SESSION['valid'])) {
                     </select>
                 </div>
 
-                <input type="submit" value="Click me" class="btn btn-default"/>
+                <input type="submit" value="Submit" class="btn btn-default"/>
 
             </form>
         </div>
