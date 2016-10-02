@@ -14,7 +14,7 @@ class Database
     //constructeur pdo
     private static function getPDO()
     {
-        $pdo = new PDO('mysql:host=' . DBHOST . '; dbname=' . DBNAME . '', DBUSER, DBPASSWD);
+        $pdo = new PDO('mysql:host=' . DBHOST . ';port=' . DBPORT . '; dbname=' . DBNAME . '', DBUSER, DBPASSWD);
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
         return $pdo;

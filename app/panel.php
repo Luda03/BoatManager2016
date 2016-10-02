@@ -69,8 +69,7 @@ if (isset($_SESSION['valid'])) {
                         <option>Motorboat</option>
                     </select>
                 </div>
-                <button type="submit" class="btn btn-default">Submit</button>
-
+                <input type="submit" value="Click me" class="btn btn-default" />
             </form>
         </div>
 

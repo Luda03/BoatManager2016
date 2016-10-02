@@ -6,6 +6,7 @@
  * Time: 14:37
  */
 define("DBHOST", "localhost");
+define("DBPORT", "3306");
 define("DBNAME", "BDB");
 define("DBUSER", "root");
 define("DBPASSWD", "");
